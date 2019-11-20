@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Container, Col, Card } from "reactstrap";
+import Weather from './components/weather/Weather';
+
 import "./App.css";
 
 class App extends Component {
@@ -10,7 +12,10 @@ class App extends Component {
         <Container>
           <Col lg="6">
             <Card>
-              <h1>Hola</h1>
+              <h1>Weather App</h1>
+              <h1>Santiago</h1>
+              <Weather />
+
             </Card>
           </Col>
         </Container>
