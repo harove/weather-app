@@ -1,0 +1,15 @@
+/**
+ * Weatherform
+ * @version v1.0.0
+ */
+
+.weatherform {
+    margin-top: 1rem;
+}
+
+form input[name="city"],
+form input[name="country"]{
+    background-color: whitesmoke;
+    color: black;
+
+}

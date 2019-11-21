@@ -3,4 +3,7 @@
  * @version v1.0.0
  */
 
-.weather {}
+.weather {
+    padding-top: 1rem;
+    background-color: transparent !important;
+}
