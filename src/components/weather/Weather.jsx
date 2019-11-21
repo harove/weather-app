@@ -39,8 +39,8 @@ const Weather = ({ city, temp, minTemp, maxTemp, weatherDesc, icon }) => {
 const minmaxTemp = (min, max) => {
   return (
     <h3>
-      <span className="px-4">{min}&deg;</span>
-      <span className="px-4">{max}&deg;</span>
+      <span className="px-4">min: {min}&deg;</span>
+      <span className="px-4">max: {max}&deg;</span>
     </h3>
   );
 };
