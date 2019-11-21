@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Weather app using the https://openweathermap.org/weather-conditions API.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
