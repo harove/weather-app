@@ -13,15 +13,23 @@ const Weather = ({ city, temp, minTemp, maxTemp, weatherDesc, icon }) => {
   return (
     <div className="weather">
       <Card>
-        <h1>{city}</h1>
+        
+
+        { city? (<h1>{city}</h1>) : null }
+
+
         <h4>
-          <img
-            src={`http://openweathermap.org/img/wn/${icon}@2x.png`}
-            alt="weather"
-          ></img>
+          { city? <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="weather" /> : null  }
         </h4>
-        <h1 className="py-2">{temp}&deg;</h1>
-        {minmaxTemp(minTemp, maxTemp)}
+
+        
+        
+
+
+        { temp? (<h1 className="py-2">{temp}&deg;</h1>) : null }
+    
+        {temp? minmaxTemp(minTemp, maxTemp):null}
+    
         <h4 className="py-3">{weatherDesc}</h4>
       </Card>
     </div>

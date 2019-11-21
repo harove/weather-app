@@ -30,7 +30,7 @@ class App extends Component {
     e.preventDefault();
     const city = e.target.elements.city.value;
     const country = e.target.elements.country.value;
-    
+
     const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiKey}`);
     const response = await api_call.json();
     console.log(response);
@@ -58,9 +58,9 @@ class App extends Component {
 
       <div className="App">
         <Container>
-          <Col lg="6">
+          <Col md={{ size: 6, order: 2, offset: 3 }} >
         
-              <h1>Weather App</h1>
+                <h1>Weather App</h1>
                 <Weatherform getWeather = {this.getWeather} />
                 <Weather
                   city = {this.state.city}
